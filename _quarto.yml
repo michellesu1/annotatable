@@ -158,6 +158,7 @@ imagify:
   lazy: true
   output-folder: _imagify_files
   header-includes: |
+    \PassOptionsToPackage{dvips}{bookmark}
     \usepackage{pgfplots}
     \usetikzlibrary{tikzmark, shapes.geometric, shapes.arrows, fit, bending, calc, backgrounds, automata, positioning}
   pdf-engine: pdflatex
