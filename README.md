@@ -1,6 +1,6 @@
-# Annotatable MIT 6.390 Notes
+# annotatable-introlml — MIT 6.390 Notes
 
-**Live website: [annotatable.vercel.app](https://annotatable.vercel.app)**
+**Live website: [annotatable-introlml.vercel.app](https://annotatable-introlml.vercel.app)**
 
 A fork of [390introml/notes](https://github.com/390introml/notes) with pastel text highlights and personal comments. The original course layout, chapter sources, equations, and algorithm rendering are preserved.
 
@@ -38,7 +38,7 @@ Vercel hosts the rendered book as a static website. Its free Hobby plan can be u
 bash scripts/deploy-vercel.sh
 ```
 
-The script renders all chapters into `_book/`, copies the static Vercel configuration, and deploys that directory to production. On first deployment, choose your personal Hobby account, create or select the `annotatable` project, and use the **Other** framework preset. No installation or build command is needed on Vercel because the book was already rendered locally. Use the stable production URL printed by Vercel for studying.
+The script renders all chapters into `_book/`, copies the static Vercel configuration, and deploys that directory to production. On first deployment, choose your personal Hobby account, create or select the `annotatable-introlml` project, and use the **Other** framework preset. No installation or build command is needed on Vercel because the book was already rendered locally. Use the stable production URL printed by Vercel for studying.
 
 If Quarto is not on your PATH, set its location explicitly:
 
