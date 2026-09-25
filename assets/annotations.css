@@ -1,0 +1,193 @@
+#study-widget {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+#study-widget * {
+  box-sizing: border-box;
+}
+#study-toolbar {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid #ded9e5;
+  border-radius: 14px;
+  background: #fffffffa;
+  box-shadow: 0 4px 28px #30203d25;
+  width: max-content;
+  max-width: calc(100vw - 24px);
+}
+#study-widget button {
+  font: inherit;
+  color: #44364f;
+  cursor: pointer;
+  border: 1px solid #dcd5e1;
+  background: white;
+  border-radius: 7px;
+  padding: 6px 10px;
+  line-height: 1.4;
+}
+#study-widget button:hover {
+  border-color: #88679c;
+  background: #f7f2fa;
+}
+#study-widget button:focus-visible {
+  outline: 3px solid #b49ac7;
+  outline-offset: 2px;
+}
+#study-widget .palette {
+  display: flex;
+  gap: 7px;
+}
+#study-widget .swatch {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #ded5e5;
+}
+#study-widget #status {
+  font-size: 12px;
+  color: #756b7c;
+}
+#study-widget #hint {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #786a85;
+}
+#study-panel {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  bottom: 120px;
+  width: 330px;
+  max-width: calc(100vw - 32px);
+  overflow: auto;
+  z-index: 1001;
+  background: white;
+  border: 1px solid #ddd4e4;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 40px #33204425;
+}
+#study-panel[hidden] {
+  display: none;
+}
+#study-widget .study-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+#study-panel > p {
+  font-size: 12px;
+  color: #7b7181;
+  margin: 12px 0;
+}
+#study-widget .backup-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+#study-widget .backup-actions button {
+  font-size: 12px;
+}
+#study-widget .note {
+  border: 1px solid #e6e0eb;
+  border-top: 4px solid var(--color);
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+#study-widget blockquote {
+  border: 0;
+  padding: 0;
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #51465a;
+  line-height: 1.6;
+  cursor: pointer;
+}
+#study-widget .note p {
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+#study-widget .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+#study-widget .empty {
+  color: #84788d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+#study-widget dialog {
+  border: 1px solid #ddd4e4;
+  border-radius: 14px;
+  padding: 24px;
+  width: 460px;
+  max-width: 90vw;
+  box-shadow: 0 15px 60px #33204430;
+  color: #333;
+}
+#study-widget dialog::backdrop {
+  background: #22142e55;
+}
+#study-widget dialog h2 {
+  font: 600 20px system-ui;
+  margin: 0 0 18px;
+}
+#study-widget dialog blockquote {
+  max-height: 160px;
+  overflow: auto;
+  background: #f6f2fa;
+  border-left: 3px solid #d9c5ee;
+  padding: 12px;
+}
+#study-widget label {
+  display: block;
+  margin: 12px 0 6px;
+}
+#study-widget textarea {
+  width: 100%;
+  font: inherit;
+  padding: 12px;
+  border: 1px solid #d8cde1;
+  border-radius: 7px;
+  resize: vertical;
+}
+body:has(#study-widget) {
+  padding-bottom: 110px !important;
+}
+@media (max-width: 600px) {
+  #study-widget #status {
+    display: none;
+  }
+  #study-toolbar {
+    gap: 7px;
+    padding: 10px;
+  }
+  #study-widget button {
+    font-size: 12px;
+  }
+  #study-widget .swatch {
+    width: 24px;
+    height: 24px;
+  }
+}

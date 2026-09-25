@@ -1,0 +1,35 @@
+<div id="study-widget">
+  <div id="study-toolbar">
+    <span id="status" role="status">Saved in this browser</span>
+    <div class="palette" id="palette" aria-label="Highlight colors"></div>
+    <button id="comment">+ Comment</button
+    ><button id="toggle-notes">My notes <span id="count">0</span></button
+    ><span id="hint" role="status">Select text, then choose a color.</span>
+  </div>
+  <aside id="study-panel" hidden>
+    <div class="study-heading">
+      <strong>My highlights & comments</strong
+      ><button id="close-notes" aria-label="Close notes">✕</button>
+    </div>
+    <p>Saved only in this browser.</p>
+    <div class="backup-actions">
+      <button id="backup">Download backup</button
+      ><button id="restore">Restore backup</button
+      ><input type="file" id="import" accept="application/json" hidden />
+    </div>
+    <div id="notes"></div>
+  </aside>
+  <dialog id="editor">
+    <form method="dialog">
+      <h2 id="editor-title">Add a comment</h2>
+      <blockquote id="quote"></blockquote>
+      <label for="comment-text">Your comment</label
+      ><textarea id="comment-text" rows="5"></textarea>
+      <div class="actions">
+        <button value="cancel">Cancel</button
+        ><button id="save-comment" value="save">Save comment</button>
+      </div>
+    </form>
+  </dialog>
+</div>
+<script src="assets/annotations.js" defer></script>

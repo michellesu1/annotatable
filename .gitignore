@@ -23,3 +23,8 @@ top.pdf
 
 # macOS
 .DS_Store
+
+# Local hosting credentials and project links
+.vercel/
+.env
+.env.*

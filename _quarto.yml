@@ -1,5 +1,7 @@
 project:
   type: book
+  resources:
+    - assets/annotations.js
   preview:
     port: 8888
 
@@ -57,7 +59,10 @@ book:
 format:
   html:
     # citation-style: elsevier-with-titles.csl
-    css: assets/style.css
+    css:
+      - assets/style.css
+      - assets/annotations.css
+    include-after-body: assets/annotations.html
     anchor-sections: true
     fontsize: "16px"
     linestretch: 1.6
