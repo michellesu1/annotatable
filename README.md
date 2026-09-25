@@ -2,9 +2,9 @@
 
 **Live website: [annotatable-introlml.vercel.app](https://annotatable-introlml.vercel.app)**
 
-A fork of [390introml/notes](https://github.com/390introml/notes) with pastel text highlights and personal comments. The original course layout, chapter sources, equations, and algorithm rendering are preserved.
+A fork of [390introml/notes](https://github.com/390introml/notes) with text highlights and personal comments. The original course layout, chapter sources, equations, and algorithm rendering are preserved.
 
-Select text, then choose a pastel color or **+ Comment**. Open **My notes** to edit comments or download/restore a backup. Annotations stay in your browser: each browser profile has its own notes, with no shared database or reader accounts. See [ANNOTATIONS.md](ANNOTATIONS.md) for details.
+Select text, then choose a color or **+ Comment**. Open **My notes** to edit comments or download/restore a backup. Annotations stay in your browser: each browser profile has its own notes, with no shared database or reader accounts. See [ANNOTATIONS.md](ANNOTATIONS.md) for details.
 
 ## Host on Vercel
 

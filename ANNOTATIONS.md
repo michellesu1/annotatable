@@ -1,6 +1,6 @@
 # Personal highlights and comments
 
-This fork adds pastel highlights and passage comments to the original MIT 6.390 Quarto book. Chapter sources, themes, equation rendering, pseudocode filters, and figures are unchanged. The diagram-only LaTeX preamble explicitly selects the bookmark driver needed by current TeX packages; this does not alter chapter content.
+This fork adds highlights and passage comments to the original MIT 6.390 Quarto book. Chapter sources, themes, equation rendering, pseudocode filters, and figures are unchanged. The diagram-only LaTeX preamble explicitly selects the bookmark driver needed by current TeX packages; this does not alter chapter content.
 
 Select a passage and choose a color in the bottom toolbar, or choose **+ Comment**. Open **My notes** to return to a passage, edit its comment, remove an annotation, or download/restore a backup.
 

@@ -95,7 +95,7 @@
       .trim();
     if (quote) {
       selection = { start, end, quote };
-      hint("Passage selected. Pick a pastel color or add a comment.");
+      hint("Passage selected. Pick a color or add a comment.");
     }
   }
   document.addEventListener("selectionchange", () => {
